@@ -70,6 +70,9 @@ class Browser(object):
     def device_name(self):
         return self.get('device_name')
 
+    def device_type(self):
+        return self.get('device_type')
+
     def platform_description(self):
         return self.get('platform_description')
 
@@ -118,6 +121,9 @@ class Browser(object):
 
     def is_mobile(self):
         return self.supports('ismobiledevice')
+
+    def is_tablet(self):
+        return self.supports('istablet')
 
     def is_syndication_reader(self):
         return self.supports('issyndicationreader')
