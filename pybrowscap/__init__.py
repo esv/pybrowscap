@@ -73,6 +73,15 @@ class Browser(object):
     def device_type(self):
         return self.get('device_type')
 
+    def device_pointing_method(self):
+        return self.get('device_pointing_method')
+
+    def device_code_name(self):
+        return self.get('device_code_name')
+
+    def device_brand_name(self):
+        return self.get('device_brand_name')
+
     def platform_description(self):
         return self.get('platform_description')
 
